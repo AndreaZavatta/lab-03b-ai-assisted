@@ -1,5 +1,8 @@
+import org.gradle.api.tasks.JavaExec
+
 plugins {
     id("java")
+    id("application")
 }
 
 group = "org.example"
@@ -17,4 +20,12 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    mainClass.set("it.unibo.Main")
+}
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
 }

@@ -1,0 +1,4 @@
+Qui il codice è scritto un po' meglio con la separazione delle responsabilità.
+Il TDD è stato molto migliore perchè aveva un buon contesto su quello che l'applicazione avrebbe dovuto fare.
+è stata decisa l'architettura fin dal principio in modo tale da avere tutto chiaro.
+L'unica cosa è che ha seguito il tdd per tutto il model, e poi per il controller e la view l'ha saltato.
