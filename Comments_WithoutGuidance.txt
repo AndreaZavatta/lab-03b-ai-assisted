@@ -1,0 +1,48 @@
+Commenti implementazione senza una guida.
+
+Modello GPT-5 mini.
+
+Prompt: "implementa l'interfaccia ConnectFour"
+
+Code quality
+- Ha introdotto i campi final. ✅
+- Non ha messo i parametri in input dei metodi come final. ❌
+- variabili tipo c o r non mi piacciono, preferisco nomi descrittivi, quindi row o column ❌
+- spesso ci sono dei magic number in giro per il codice. ad esempio nel metodo checkWin ❌
+- ovviamente non ha usato un approccio tdd e a me questa cosa piacerebbe molto ❌
+- in alcuni casi dove si potevano utilizzare refactor di metodi per spiegare il codice ha deciso di utilizzare commenti per spiegare cosa succede. ❌
+- gli edge cases sono gestiti da ConnectFour ✅
+
+Correctness.
+
+- Per quanto riguarda la correttezza, il gioco funziona perfettamente ✅
+- Il gioco gestisce tutti gli edge case perfettamente ✅
+
+Creativity:
+- in realtà non vedo tecniche interessanti valutate, gestisce semplicemente l'array bidimensionale per la griglia con le relative operazioni su di essa quindi non è neanche troppo performante. (doppio ciclo for).✅
+
+- il dominio è stato capito perfettamente direi.✅
+
+Modello GPT-5.3-Codex.
+
+Prompt: "implementa l'interfaccia ConnectFour"
+Prompt successivo: "implementa il main per eseguire l'applicazione"
+
+Code quality.
+- i campi sono tutti final. ✅
+- parametri di input dei metodi sono tutti final ✅
+- per variabili ci sono nomi descrittivi ✅
+- non ci sono magic number in giro per il codice ✅
+- approccio tdd non utilizzato ❌
+- secondo me per quanto riguarda i refactor dei metodi è migliorato ma si poteva fare ancora meglio. ❌
+- gli edge cases sono gestiti dal main, dovrebbero essere gestiti dal ConnectFourImpl ❌
+
+Correctness.
+
+- Per quanto riguarda la correttezza, il gioco funziona perfettamente ✅
+- Il gioco gestisce tutti gli edge case perfettamente ✅
+
+Creativity:
+- in realtà non vedo tecniche interessanti valutate, gestisce semplicemente l'array bidimensionale per la griglia con le relative operazioni su di essa quindi non è neanche troppo performante. (doppio ciclo for).❌
+
+- il dominio è stato capito perfettamente direi. ✅
