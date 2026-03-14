@@ -1,0 +1,5 @@
+l'agente ha seguito un approccio tdd, ma non avendo il contesto dell'applicazione (le feature erano dedotte solo dall'interfaccia),
+Spesso sbagliava anche implementazioni semplici.
+E' stato sperimentato con GPT-5.3, inoltre, non aveva fatto subito anche la gui da terminale, e quando l'ha fatta
+non deduce subito di chi è il turno, ti dice di inserire se sei red o yellow, la gestione dell'errore (due yellow di fila) l'ha gestita
+e anche altre eccezioni
